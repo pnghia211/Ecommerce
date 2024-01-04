@@ -32,4 +32,6 @@ public class BottomComponent {
         wait.until(ExpectedConditions.visibilityOfElementLocated(userSel));
         appiumDriver.findElement(userSel).click();
     }
+
+
 }

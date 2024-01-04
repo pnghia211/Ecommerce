@@ -1,10 +1,11 @@
-package test_flows;
+package test_flows.Authen;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import models.Components.RegisterComponent;
 import models.Components.global.MainScreenComponent;
 import org.testng.Assert;
+import test_flows.BaseFlow;
 
 public class RegisterFlow extends BaseFlow {
 

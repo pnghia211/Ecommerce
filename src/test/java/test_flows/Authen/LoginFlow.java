@@ -1,12 +1,12 @@
-package test_flows;
+package test_flows.Authen;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import models.Components.LoginComponent;
-import models.Components.RegisterComponent;
+import models.Components.login.LoginComponent;
 import models.Components.global.MainScreenComponent;
 import org.apache.commons.validator.routines.EmailValidator;
 import org.testng.Assert;
+import test_flows.BaseFlow;
 
 public class LoginFlow extends BaseFlow {
 
@@ -21,19 +21,19 @@ public class LoginFlow extends BaseFlow {
 
     public void inputLoginCred() {
         MainScreenComponent mainScreenComp = new MainScreenComponent(appiumDriver);
-        LoginComponent loginComp = mainScreenComp.loginComponent();
+        LoginComponent loginComp = mainScreenComp.loginComp();
         loginComp.inputEmail(email);
         loginComp.inputPassword(password);
     }
 
     public void clickLoginBtn() {
         MainScreenComponent mainScreenComp = new MainScreenComponent(appiumDriver);
-        LoginComponent loginComp = mainScreenComp.loginComponent();
+        LoginComponent loginComp = mainScreenComp.loginComp();
         loginComp.clickLoginBtn();
     }
 
     public void verifyLoginCred() {
-        LoginComponent loginComp = new MainScreenComponent(appiumDriver).loginComponent();
+        LoginComponent loginComp = new MainScreenComponent(appiumDriver).loginComp();
         boolean isInvalidEmail = EmailValidator.getInstance().isValid(email);
         boolean isInvalidPassword = password.length() > 7;
 

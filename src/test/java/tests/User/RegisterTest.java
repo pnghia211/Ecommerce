@@ -2,13 +2,10 @@ package tests.User;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import test_flows.RegisterFlow;
+import test_flows.Authen.RegisterFlow;
 import tests.BaseTest;
-import tests_data.DataObjectBuilder;
+import tests_data.Models.DataObjectBuilder;
 import tests_data.Models.RegisterData;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class RegisterTest extends BaseTest {
 

@@ -2,11 +2,10 @@ package tests.User;
 
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
-import test_flows.LoginFlow;
+import test_flows.Authen.LoginFlow;
 import tests.BaseTest;
-import tests_data.DataObjectBuilder;
+import tests_data.Models.DataObjectBuilder;
 import tests_data.Models.LoginData;
-import tests_data.Models.RegisterData;
 
 public class LoginTest extends BaseTest {
 

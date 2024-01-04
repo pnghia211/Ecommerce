@@ -18,4 +18,16 @@ public class BaseFlow {
         BottomComponent bottomComp = mainScreenComp.bottomComp();
         bottomComp.clickUserComp();
     }
+
+    public void goCartScreen () {
+        MainScreenComponent mainScreenComp = new MainScreenComponent(appiumDriver);
+        BottomComponent bottomComp = mainScreenComp.bottomComp();
+        bottomComp.clickCartComp();
+    }
+
+    public void goHomeScreen () {
+        MainScreenComponent mainScreenComp = new MainScreenComponent(appiumDriver);
+        BottomComponent bottomComp = mainScreenComp.bottomComp();
+        bottomComp.clickHomeComp();
+    }
 }

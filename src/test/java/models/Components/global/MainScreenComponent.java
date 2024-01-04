@@ -2,8 +2,13 @@ package models.Components.global;
 
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
-import models.Components.LoginComponent;
+import models.Components.order.CartComponent;
+import models.Components.HomeComponent;
+import models.Components.login.LoginComponent;
 import models.Components.RegisterComponent;
+import models.Components.order.ConfirmComponent;
+import models.Components.order.PaymentComponent;
+import models.Components.order.ShippingAddressComponent;
 
 public class MainScreenComponent {
 
@@ -16,12 +21,25 @@ public class MainScreenComponent {
     public BottomComponent bottomComp () {
         return new BottomComponent(appiumDriver);
     }
-
+    public HomeComponent homeComp () {
+        return new HomeComponent(appiumDriver);
+    }
+    public CartComponent cartComp () {
+        return new CartComponent(appiumDriver);
+    }
+    public ShippingAddressComponent shippingAddressComp () {
+        return new ShippingAddressComponent(appiumDriver);
+    }
+    public PaymentComponent paymentComp () {
+        return new PaymentComponent(appiumDriver);
+    }
+    public ConfirmComponent confirmComp () {
+        return new ConfirmComponent(appiumDriver);
+    }
     public RegisterComponent registerComp() {
         return new RegisterComponent(appiumDriver);
     }
-
-    public LoginComponent loginComponent() {
+    public LoginComponent loginComp() {
         return new LoginComponent(appiumDriver);
     }
 }

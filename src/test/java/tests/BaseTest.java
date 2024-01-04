@@ -16,8 +16,8 @@ public class BaseTest {
         appiumDriver = DriverFactory.getDriver(Platform.android);
     }
 
-//    @AfterTest(alwaysRun = true)
-//    public void quitAppiumSession() {
-//        appiumDriver.quit();
-//    }
+    @AfterTest(alwaysRun = true)
+    public void quitAppiumSession() {
+        appiumDriver.quit();
+    }
 }

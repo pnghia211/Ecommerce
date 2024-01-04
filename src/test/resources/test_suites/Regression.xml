@@ -3,8 +3,8 @@
 <suite name="Regression">
     <test name="Test" >
         <classes>
-            <class name="tests.User.RegisterTest"></class>
-            <class name="tests.User.LoginTest"></class>
+            <class name="tests.User.LoginTest"/>
+            <class name="tests.Order.CancelOrderTest"/>
         </classes>
     </test>
 </suite>
